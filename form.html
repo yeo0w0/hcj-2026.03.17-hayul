@@ -16,6 +16,89 @@
 
       <label for="userId">아이디</label>
       <input type="text" id="userId" />
+
+      <label for="userpw">비밀번호</label>
+      <input type="password" id="userpw" />
+    </form>
+
+    <h1>form basic</h1>
+    <form action="">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="" /><br /><br />
+      <input type="submit" value="제출" />
+    </form>
+
+    <p>Choose your favorite Web language:</p>
+
+    <form>
+      <input type="radio" id="html" name="fav_language" value="HTML" />
+      <label for="html">HTML</label><br />
+
+      <input type="radio" id="css" name="fav_language" value="CSS" />
+      <label for="css">CSS</label><br />
+
+      <input type="radio" id="python" name="fav_language" value="Python" />
+      <label for="python">Python</label><br />
+
+      <input
+        type="radio"
+        id="javascript"
+        name="fav_language"
+        value="JavaScript"
+      />
+      <label for="javascript">JavaScript</label>
+    </form>
+
+    <p>checkbox</p>
+    <form>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"> I have a bike</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+      <label for="vehicle2"> I have a car</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+      <label for="vehicle3"> I have a boat</label><br /><br />
+      <input type="submit" value="제출" />
+    </form>
+
+    <h1>input type</h1>
+
+    <p>The <strong>input type="password"</strong> defines a password field:</p>
+
+    <form action="">
+      <label for="username">Username:</label><br />
+      <input type="text" id="username" name="username" /><br />
+      <label for="pwd">Password:</label><br />
+      <input type="password" id="pwd" name="pwd" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" /><br />
+
+      <input type="button" onclick="alert('우하하!!')" value="Click Me!" />
+      <button onclick="alert('하하하!!')">NO! Click Me!</button>
+    </form>
+
+    <p>form p</p>
+    <form>
+      <label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor" />
+      <br />
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday" />
+      <br />
+      <label for="datemax">Enter a date before 1980-01-01:</label>
+      <input type="date" id="datemax" name="datemax" max="1979-12-31" /><br />
+      <label for="datemin">Enter a date after 2000-01-01:</label>
+      <input type="date" id="datemin" name="datemin" min="2000-01-02" /><br />
+      <label for="birthdaytime">Birthday (date and time):</label>
+      <input
+        type="datetime-local"
+        id="birthdaytime"
+        name="birthdaytime"
+      /><br />
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email" />
+      <input type="submit" value="Submit" required />
     </form>
   </body>
 </html>
