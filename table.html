@@ -3,26 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        /* width: 100%; */
-      }
-
-      td,
-      th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-      }
-
-      tr:nth-child(even) {
-        background-color: #dddddd;
-      }
-    </style>
+    <title>HCJdemo</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 10;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
   <body>
     <nav class="navbar">
       <div class="container">
@@ -79,6 +80,66 @@
           <th>174,000원</th>
         </tr>
       </tfoot>
+    </table>
+    <br /><br />
+    <table>
+      <caption>
+        강의 시간표
+      </caption>
+      <thead>
+        <tr>
+          <th>시간</th>
+          <th>월</th>
+          <th>화</th>
+          <th>수</th>
+          <th>목</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>9:00</th>
+          <th></th>
+          <th rowspan="2">웹</th>
+          <th rowspan="2">과학</th>
+          <th rowspan="4">네트워크</th>
+        </tr>
+        <tr>
+          <th>10:00</th>
+        </tr>
+        <tr>
+          <th>11:00</th>
+          <th rowspan="2">영어</th>
+          <th rowspan="2">자료구조</th>
+          <th rowspan="2">서버관리</th>
+        </tr>
+        <tr>
+          <th>12:00</th>
+        </tr>
+        <tr>
+          <th>13:00</th>
+        </tr>
+        <tr>
+          <th>14:00</th>
+          <th rowspan="2">웹</th>
+        </tr>
+        <tr>
+          <th>15:00</th>
+          <th></th>
+          <th></th>
+          <th rowspan="2">시티즌</th>
+        </tr>
+        <tr>
+          <th>16:00</th>
+          <th rowspan="2">자료구조</th>
+          <th rowspan="2">서버관리</th>
+        </tr>
+        <tr>
+          <th>17:00</th>
+        </tr>
+        <tr>
+          <th>18:00</th>
+        </tr>
+      </tbody>
     </table>
   </body>
 </html>
